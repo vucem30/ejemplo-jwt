@@ -13,6 +13,7 @@ import com.example.api.model.VucemCredentials;
 import com.example.api.model.VucemRestResponse;
 import com.example.api.model.exceptions.ServiceException;
 import com.example.api.model.exceptions.V30Error;
+import com.example.api.model.meta.EnumMetaCatAtt;
 import com.example.api.service.DemoService;
 import com.example.api.utils.RestHttpResponseHelper;
 
@@ -26,8 +27,8 @@ import lombok.extern.slf4j.Slf4j;
 @RestController
 @RequestMapping(value = "/api")
 public class DemoController {
-
     private DemoService demoService;
+
     public DemoController(DemoService demoService){
         this.demoService = demoService;
     }
@@ -83,5 +84,20 @@ public class DemoController {
 
         return RestHttpResponseHelper.getReturnValue(status, u, ce);
     }
+
+    @PostMapping(
+            value = "/persinsertIntoSolicitudDetalle/{idSolicitud}/{idMetaCatAtt}/{valor}",
+            produces = "application/json; charset=utf-8")
+    public ResponseEntity<Object> persinsertIntoSolicitudDetalle(
+            @PathVariable int idSolicitud, 
+            @PathVariable EnumMetaCatAtt idMetaCatAtt, 
+            @PathVariable String valor){
+        try {
+            Integer k = this.demoService.persistAttributeIntoSolicitudDetalle(idSolicitud, idMetaCatAtt, valor);
+            return RestHttpResponseHelper.getReturnValue(HttpStatus.OK, k, null);
+        } catch (ServiceException e) {
+            return RestHttpResponseHelper.getReturnValue(HttpStatus.INTERNAL_SERVER_ERROR, null, new V30Error(e));
+        }
+    } 
 
 }

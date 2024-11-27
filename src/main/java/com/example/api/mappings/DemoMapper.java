@@ -2,14 +2,16 @@ package com.example.api.mappings;
 
 /* */
 import org.apache.ibatis.exceptions.PersistenceException;
+
+import java.util.List;
+
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Result;
 import org.apache.ibatis.annotations.ResultMap;
 import org.apache.ibatis.annotations.Results;
 import org.apache.ibatis.annotations.Select;
 /* */
-
-
+import org.apache.ibatis.annotations.Update;
 import org.springframework.stereotype.Repository;
 import com.example.api.model.User;
 
@@ -49,5 +51,23 @@ public interface DemoMapper {
     User login(String correo, String clave) throws PersistenceException;
 
     @Insert("INSERT INTO solicitud_detalle (id_solicitud, id_meta_cat_att, valor) VALUES (#{idSolicitud}, #{idMetaCatAtt}, #{valor})")
-    int insertIntoSolicitudDetalle(int idSolicitud, int idMetaCatAtt, String valor);
+    Integer insertIntoSolicitudDetalle(int idSolicitud, int idMetaCatAtt, String valor);
+
+    @Select("select count(*) from solicitud_detalle where id_solicitud = #{idSolicitud} and id_meta_cat_att = #{idMetaCatAtt}")       
+    Integer buscaEnLaTablaSolicitudDetalle(int idSolicitud, int idMetaCatAtt);
+
+    @Update("update solicitud_detalle set valor = #{valor} where id_solicitud = #{idSolicitud} and id_meta_cat_att = #{idMetaCatAtt}")
+    Integer updateIntoSolicitudDetalle(int idSolicitud, int idMetaCatAtt, String valor);
+
+    @Select("select id from meta_cat_val where id_meta_cat_att = #{idAtt}") 
+    List<Integer> valoresDelCatalogo(int idAtt);
+
+    @Select("select min_value from meta_cat_range where id_meta_cat_att=#{att} ")
+    Double minValue(int att);
+
+    @Select("select max_value from meta_cat_range where id_meta_cat_att=#{att} ")
+    Double maxValue(int att);
+
+    @Select("select count(*) from meta_cat_range where id_meta_cat_att=#{att} ")
+    Integer hasRange(int value);
 }
