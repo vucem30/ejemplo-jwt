@@ -1,4 +1,4 @@
-package net.ultrasist.demo;
+package net.ultrasist.v30.api.demo;
 
 import org.jasypt.util.text.BasicTextEncryptor;
 import org.junit.Test;

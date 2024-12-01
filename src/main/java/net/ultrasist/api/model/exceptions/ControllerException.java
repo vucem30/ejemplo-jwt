@@ -1,16 +1,14 @@
 package net.ultrasist.api.model.exceptions;
 
 import java.security.SecureRandom;
-
 import org.springframework.http.HttpStatus;
-
 import lombok.extern.slf4j.Slf4j;
 
 /**
  * <p>Descripción:</p>
  * Clase que define los componentes de los que una excepción puede estar formada.
  *
- * @author  fhernanda
+ * @author  garellanos
  * @version 1.0-SNAPSHOT
  * @since   1.0-SNAPSHOT
  * @see     net.ultrasist.chambeaya.core.api.model.exceptions.ServiceException.tienda.api.model.exceptions.BusinessException
@@ -86,7 +84,6 @@ public class ControllerException extends Exception {
         this(shortMessage, detailedMessage, localExceptionNumber, localExceptionKey, HttpStatus.ACCEPTED);
     }
 
-
     /**
      * Genera una excepción por default con clave 1000, dada otra excepción pasada como parámetro.
      * Convierte la excepción recibida en una excepción ControllerException.
@@ -94,7 +91,12 @@ public class ControllerException extends Exception {
      * @param rootException excepción recibida
      */
     public ControllerException(Exception rootException) {
-        this(rootException, rootException.getMessage(), rootException.getMessage(), 1000, "cve_1000", HttpStatus.INTERNAL_SERVER_ERROR, new Object[0]);
+        this(rootException, 
+                rootException.getMessage(), 
+                rootException.getMessage(), 
+                1000, 
+                "cve_1000", 
+                HttpStatus.INTERNAL_SERVER_ERROR, "");
     }
     /*
      * Getter.
@@ -165,7 +167,7 @@ public class ControllerException extends Exception {
     /**
      * Retorna los parámetros que fueron pasados a una custom execption.
      * 
-     * @return
+     * @return this.Object[] params
      */
     public Object[] getParams() {
         return this.params;
@@ -193,13 +195,14 @@ public class ControllerException extends Exception {
         log.error("UID: {} Description: {}", uid, desc);
         return String.format(msg,  uid);
     }
-    
-    public static void main(String...s) {
-        System.out.println(buildMessage("gus","tavo"));
-    }
 
+    /**
+     * Genera una cadena aleatoria de longitud 'len'.
+     *
+     * @param len Longitud de la cadena a generar.
+     * @return Cadena aleatoria.
+     */
     private static String getRandomString(int len) {
-        
         char[] result = new char[len];
         String base = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
         for(int i =0; i<len; i++) {

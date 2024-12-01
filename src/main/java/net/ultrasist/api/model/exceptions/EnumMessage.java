@@ -30,7 +30,7 @@ public enum EnumMessage {
      */
     BLOCKED_USER(
             1003,
-            "User bloqueado",
+            "Usuario bloqueado",
             "Bloqueo de seguridad por %d minutos y %d segundos",
             HttpStatus.BAD_REQUEST),
     

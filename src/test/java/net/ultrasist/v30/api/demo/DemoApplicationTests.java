@@ -1,4 +1,4 @@
-package net.ultrasist.demo;
+package net.ultrasist.v30.api.demo;
 
 import static org.junit.Assert.assertEquals;
 

@@ -10,7 +10,7 @@ import lombok.extern.slf4j.Slf4j;
  * <p>Descripción:</p>
  * Clase que define los componentes de los que una excepción puede estar formada.
  *
- * @author  fhernanda
+ * @author  garellanos
  * @version 1.0-SNAPSHOT
  * @since   1.0-SNAPSHOT
  * @see     net.ultrasist.chambeaya.core.api.model.exceptions.ServiceException.tienda.api.model.exceptions.BusinessException
