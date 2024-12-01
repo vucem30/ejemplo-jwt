@@ -65,7 +65,7 @@ public class ControllerException extends Exception {
             int localExceptionNumber,
             String localExceptionKey,
             HttpStatus httpStatus) {
-        this(new Exception(""), shortMessage, detailedMessage, localExceptionNumber, localExceptionKey, httpStatus, new Object[0]);
+        this(new Exception(""), shortMessage, detailedMessage, localExceptionNumber, localExceptionKey, httpStatus, "");
     }
 
     /**
@@ -98,9 +98,7 @@ public class ControllerException extends Exception {
                 "cve_1000", 
                 HttpStatus.INTERNAL_SERVER_ERROR, "");
     }
-    /*
-     * Getter.
-     */
+
     /**
      * <p>Getter for the field <code>shortMessage</code>.</p>
      *

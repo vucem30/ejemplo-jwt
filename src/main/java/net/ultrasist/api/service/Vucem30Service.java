@@ -6,7 +6,7 @@ import net.ultrasist.api.model.Tramite;
 import net.ultrasist.api.model.exceptions.ServiceException;
 import net.ultrasist.api.model.meta.EnumMetaCatAtt;
 
-public interface DemoService {
+public interface Vucem30Service {
 
     /**
      * Autentica a un usuario con el nombre de usuario y contraseña proporcionados.

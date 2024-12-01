@@ -3,12 +3,10 @@ package net.ultrasist.api.rest;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.List;
 import java.util.Map;
 
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.HttpStatusCode;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -19,13 +17,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.http.ResponseEntity;
 
-import net.ultrasist.api.model.ParAttValor;
 import net.ultrasist.api.model.User;
 import net.ultrasist.api.model.VucemCredentials;
 import net.ultrasist.api.model.exceptions.ServiceException;
 import net.ultrasist.api.model.exceptions.V30Error;
 import net.ultrasist.api.model.meta.EnumMetaCatAtt;
-import net.ultrasist.api.service.DemoService;
+import net.ultrasist.api.service.Vucem30Service;
 import net.ultrasist.api.utils.JwtFunctios;
 import net.ultrasist.api.utils.RestHttpResponseHelper;
 
@@ -38,11 +35,11 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 @RestController
 @RequestMapping(value = "/api")
-public class DemoController {
-    private DemoService demoService;
+public class Vucem30Controller {
+    private Vucem30Service demoService;
     JwtFunctios jwtFunctios = JwtFunctios.getInstance();
 
-    public DemoController(DemoService demoService){
+    public Vucem30Controller(Vucem30Service demoService){
         this.demoService = demoService;
     }
 

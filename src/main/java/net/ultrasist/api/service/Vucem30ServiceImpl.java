@@ -1,6 +1,5 @@
 package net.ultrasist.api.service;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -14,15 +13,14 @@ import net.ultrasist.api.model.exceptions.ServiceException;
 import net.ultrasist.api.model.meta.EnumMetaCatAtt;
 import net.ultrasist.api.utils.JwtFunctios;
 
-import jakarta.annotation.PostConstruct;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 @Service
-public class DemoServiceImpl implements DemoService {
+public class Vucem30ServiceImpl implements Vucem30Service {
     private DemoMapper dm;
 
-    public DemoServiceImpl(DemoMapper dm) {
+    public Vucem30ServiceImpl(DemoMapper dm) {
         this.dm = dm;
     }
 
