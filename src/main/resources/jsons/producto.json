@@ -1,0 +1,235 @@
+{
+    "producto": {
+        "id": 75,
+        "nombre": "Amazon Echo PARANGARICUTIRIMICUARO Dot 5th Gen with clock con asistente virtual Alexa, pantalla integrada cloud blue 110V/240V",
+        "shortName": "Amazon Echo Dot 5th Gen with clock",
+        "precioOriginal": "1,559",
+        "precioDescuento": "969",
+        "porcientoDescuento": "38",
+        "mensualidad": "98.58",
+        "meses": 12,
+        "numVentas": "+11mil",
+        "numValoraciones": "1,764",
+        "unidades": "1,888",
+        "tienda": "Electro Shop",
+        "color": "Cloud blue",
+        "totalVentasTienda": "+50mil",
+        "points": 63
+    },
+    "puntosDestacables": [
+        "Con reconocimiento de voz.",
+        "Función de control inteligente de dispositivos del hogar.",
+        "Opción de sistema de audio multi-room.",
+        "Conexión wifi y bluetooth.",
+        "Recibe y realiza llamadas.",
+        "Funciona en español y en inglés.",
+        "Con pantalla digital.",
+        "Compatible con: iOS 14, Android 8, Fire OS 7.0.",
+        "Su asistente virtual te ayudará a realizar diversas tareas como reproducir música, contestar llamadas y conocer el pronóstico del tiempo."
+    ],
+    "descriptions": [
+        {
+            "title": null,
+            "description": "Súmate al mundo de la inteligencia artificial con Amazon Echo Dot 5th Gen with clock que ofrece soluciones para automatizar algunas tareas en tu hogar."
+        },
+        {
+            "title": "Alexa te acompaña",
+            "description": "La ventaja de este asistente virtual es que tiene mejor integración con todos los servicios y dispositivos de Amazon. ¿Necesitas ayuda con tus tareas diarias? Alexa organizará tu rutina, te brindará noticias, comprobará el estado del clima y mucho más."
+        },
+        {
+            "title": "Control inteligente de tu hogar",
+            "description": "Prender y apagar luces, abrir puertas, controlar la calefacción o encender la TV, son algunas de las tantas tareas que podrás automatizar con este único producto. Solo deberás conectar la bocina a cualquier dispositivo compatible para disfrutar de una nueva forma de interactuar con los espacios."
+        },
+        {
+            "title": "Sistema de audio multi-room",
+            "description": "Este novedoso sistema permite compartir música o realizar anuncios en distintas habitaciones y en el mismo momento. Tan solo requiere que conectes los dispositivos smart compatibles entre sí."
+        }
+    ],
+    "imagenes": [
+        "alexa1.webp", 
+        "alexa2.webp", 
+        "alexa3.webp", 
+        "alexa4.webp"
+    ],
+    "caracteristicas": [
+        {
+            "name" : "Con sistema de audio multi-room:",
+            "value" : "Sí"
+        },
+        {
+            "name" : "Con cámara:",
+            "value" : "No"
+        },
+        {
+            "name" : "Con display digital:",
+            "value" : "Sí"
+        },
+        {
+            "name" : "Con pantalla táctil:",
+            "value" : "NO"
+        },
+        {
+            "name" : "Con Bluetooth:",
+            "value" : "Sí"
+        },
+        {
+            "name" : "Asistentes virtuales:",
+            "value" : "Alexa"
+        }
+    ],
+    "featureTables": [
+        {
+            "name": "Características generales",
+            "rows": [
+                {
+                    "th": "Marca",
+                    "td": "Amazon"
+                },
+                {
+                    "th": "Modelo",
+                    "td": "Echo Dot 5th Gen with clock"
+                },
+                {
+                    "th": "Color",
+                    "td": "Cloud blue"
+                },
+                {
+                    "th": "Voltaje",
+                    "td": "110V/240V"
+                }
+            ]
+        },
+        {
+            "name": "Especificaciones",
+            "rows": [
+                {
+                    "th": "Asistentes virtuales",
+                    "td": "Alexa"
+                },
+                {
+                    "th": "Funciones",
+                    "td": "Reproducción de música, Control por voz, Reloj, Alarma, Control de dispositivos del hogar, Llamadas, Desactivar micrófono, Noticias, Control por tacto"
+                },
+                {
+                    "th": "Idiomas",
+                    "td": "Inglés, Español"
+                },
+                {
+                    "th": "Sistemas operativos compatibles",
+                    "td": "iOS 14, Android 8, Fire OS 7.0"
+                }
+            ]
+        },
+        {
+            "name": "Pantalla",
+            "rows": [
+                {
+                    "th": "Con display digital",
+                    "td": "Sí"
+                },
+                {
+                    "th": "Con pantalla táctil",
+                    "td": "No"
+                }
+            ]
+        },
+        {
+            "name": "Cámara",
+            "rows": [
+                {
+                    "th": "Con cámara",
+                    "td": "No"
+                }
+            ]
+        },
+        {
+            "name": "Otros",
+            "rows": [
+                {
+                    "th": "Con materiales reciclables",
+                    "td": "Sí"
+                }
+            ]
+        },
+        {
+            "name": "Sonido",
+            "rows": [
+                {
+                    "th": "Potencia",
+                    "td": "15 W"
+                },
+                {
+                    "th": "Radiofrecuencias",
+                    "td": "2.4 GHz, 5 GHz"
+                },
+                {
+                    "th": "Con sistema de audio multi-room",
+                    "td": "Sí"
+                },
+                {
+                    "th": "Respuesta mínima en frecuencia",
+                    "td": "100 Hz"
+                },
+                {
+                    "th": "Respuesta máxima en frecuencia",
+                    "td": "40000 Hz"
+                }
+            ]
+        },
+        {
+            "name": "Otros",
+            "rows": [
+                {
+                    "th": "Tipos de alimentación",
+                    "td": "Corriente eléctrica"
+                },
+                {
+                    "th": "Es resistente a la humedad",
+                    "td": "No"
+                }
+            ]
+        },
+        {
+            "name": "Conectividad",
+            "rows": [
+                {
+                    "th": "Con conexión Wi-Fi",
+                    "td": "Sí"
+                },
+                {
+                    "th": "Estándares inalámbricos",
+                    "td": "IEEE 802.11a/b/g/n/ac"
+                },
+                {
+                    "th": "Con Bluetooth",
+                    "td": "Sí"
+                }
+            ]
+        },
+        {
+            "name": "Peso y dimensiones",
+            "rows": [
+                {
+                    "th": "Profundidad",
+                    "td": "3.9\""
+                },
+                {
+                    "th": "Altura",
+                    "td": "89 mm"
+                },
+                {
+                    "th": "Ancho",
+                    "td": "100 mm"
+                },
+                {
+                    "th": "Peso",
+                    "td": "304 gr"
+                },
+                {
+                    "th": "Diámetro",
+                    "td": "100 mm"
+                }
+            ]
+        }
+    ]
+}

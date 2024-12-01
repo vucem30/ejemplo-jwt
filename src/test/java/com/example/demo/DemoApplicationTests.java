@@ -1,14 +1,14 @@
-package com.example.demo;
+package net.ultrasist.demo;
 
 import static org.junit.Assert.assertEquals;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.http.HttpStatus;
 
-import com.example.api.model.User;
-import com.example.api.model.VucemResResponseError;
-import com.example.api.model.VucemRestResponse;
-import com.example.api.utils.RestHttpsRequest;
+import net.ultrasist.api.model.User;
+import net.ultrasist.api.model.VucemResResponseError;
+import net.ultrasist.api.model.VucemRestResponse;
+import net.ultrasist.api.utils.RestHttpsRequest;
 
 class DemoApplicationTests {
 	private RestHttpsRequest invoker = RestHttpsRequest.getInstance();
